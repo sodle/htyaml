@@ -11,9 +11,9 @@ html:
           - h1: Or
           - h2: an
           - h3: array of other elements
-  - div:
-      - "@class": container-fluid
-      - Attributes are denoted with an @
-      - a:
-          - "@href": https://scoott.blog
-          - You can stack raw text, child elements, and attrs easily
+      - div:
+          - "@class": container-fluid
+          - Attributes are denoted with an @
+          - a:
+              - "@href": https://scoott.blog
+              - You can stack raw text, child elements, and attrs easily
