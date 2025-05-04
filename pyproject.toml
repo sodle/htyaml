@@ -1,20 +1,20 @@
-[tool.poetry]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[project]
+authors = [{ name = "Scott Odle", email = "scott@sjodle.com" }]
+requires-python = "<4.0,>=3.12"
+dependencies = [
+    "pyyaml<7.0.0,>=6.0.2",
+    "beautifulsoup4<5.0.0,>=4.12.3",
+    "click<9.0.0,>=8.1.8",
+]
 name = "htyaml"
 version = "0.1.0"
-description = ""
-authors = ["Scott Odle <scott@sjodle.com>"]
+description = "Hypertext, in YAML"
 readme = "README.md"
 
-[tool.poetry.scripts]
+[project.scripts]
 htyaml = "htyaml:main"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-pyyaml = "^6.0.2"
-beautifulsoup4 = "^4.12.3"
-click = "^8.1.8"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"

@@ -4,7 +4,7 @@ Generate HTML from YAML.
 
 ## Installation
 
-``poetry install`
+`uv tool install htyaml`
 
 ## Usage
 
